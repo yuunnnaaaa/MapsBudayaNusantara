@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* gambar full cover */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;          /* gambar di bawah */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1); /* gelap transparan biar teks jelas */
+  z-index: 1;                  /* overlay di atas gambar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-konten {
+  color: white;
+  max-width: 700px;
+  padding: 20px;
+  z-index: 2;          /* konten di atas overlay */
+  position: relative;
+}
+
+.gradient-text
+{
+    font-size: 3rem;
+    background: radial-gradient(circle, #ffcc00, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.1),
+    0px 0px 10px rgba(255, 204, 0, 0.2),
+    0px 0px 20px rgba(255, 102, 0, 0.2);
+}
+
+.hero p
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#ffaa00;
+}
+.hero button
+{
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero button:hover
+{
+    background: #ffaa00;
+}
+
+.card-info {
+  margin: 0;
+  padding: 20px;   /* kasih padding biar isi ga nempel */
+  background: #fff;
+  display: flex;
+  align-items: center;  /* isi rata tengah vertikal */
+}
+
+.card-info .container {
+  max-width: 100% !important;   /* hilangkan batas lebar Bootstrap */
+  padding-left: 0 !important;   /* hilangkan padding kiri-kanan */
+  padding-right: 0 !important;
+  height: 100%;         /* container ikut tinggi penuh */
+}
+
+.card-info .row {
+  margin-left: 0;
+  margin-right: 0;
+  height: 100%;         /* row ikut tinggi penuh */
+  align-items: center;  /* biar card ikut rata */
+}
+
+/* opsional: kasih bayangan biar lebih elegan */
+.card-info .card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-info .card .card-body .card-title {
+  color: #d35400; /* Orange bata */
+  font-weight: 600;
+}
+
+
