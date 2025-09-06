@@ -17,7 +17,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;          /* gambar di bawah */
+  z-index: 0;
 }
 
 .overlay {
@@ -26,8 +26,8 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.1); /* gelap transparan biar teks jelas */
-  z-index: 1;                  /* overlay di atas gambar */
+  background: rgba(0,0,0,0.1);
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@ html, body {
   color: white;
   max-width: 700px;
   padding: 20px;
-  z-index: 2;          /* konten di atas overlay */
+  z-index: 2;
   position: relative;
 }
 
@@ -78,27 +78,26 @@ html, body {
 
 .card-info {
   margin: 0;
-  padding: 20px;   /* kasih padding biar isi ga nempel */
+  padding: 20px;
   background: #fff;
   display: flex;
-  align-items: center;  /* isi rata tengah vertikal */
+  align-items: center;
 }
 
 .card-info .container {
-  max-width: 100% !important;   /* hilangkan batas lebar Bootstrap */
-  padding-left: 0 !important;   /* hilangkan padding kiri-kanan */
-  padding-right: 0 !important;
-  height: 100%;         /* container ikut tinggi penuh */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;         
 }
 
 .card-info .row {
   margin-left: 0;
   margin-right: 0;
-  height: 100%;         /* row ikut tinggi penuh */
-  align-items: center;  /* biar card ikut rata */
+  height: 100%;
+  align-items: center;
 }
 
-/* opsional: kasih bayangan biar lebih elegan */
 .card-info .card {
   border: none;
   border-radius: 12px;
@@ -106,7 +105,7 @@ html, body {
 }
 
 .card-info .card .card-body .card-title {
-  color: #d35400; /* Orange bata */
+  color: #d35400;
   font-weight: 600;
 }
 

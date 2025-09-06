@@ -41,6 +41,9 @@
       color: #007BFF;
       text-decoration: none;
     }
+    .card-info {
+      background-image: url("{% static 'img/latar_polos.jpg' %}");
+    }
 
     .card-title {
       color: #d35400; /* Orange bata */
@@ -51,14 +54,19 @@
       color: #444; /* Abu gelap */
     }
 
-      h2, .card-title {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-      }
-      p, .card-text {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-      }
+    h2, .card-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+
+    p, .card-text {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+    }
+
+    #eksplorasi {
+      background-image: url("{% static 'img/latar_polos.jpg' %}");
+    }
   </style>
 </head>
 <body>
@@ -73,7 +81,7 @@
     </div>
   </section>
 
-  <section class="card-info my-5">
+  <section class="card-info py-5">
     <h2 class="gradient-text py-3 mb-2 text-center">Seputar Informasi Yang Akan Dipelajari</h2>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -108,8 +116,12 @@
     </div>
   </section>
 
+  <section class="list-prov">
+
+  </section>
+
   <section id="eksplorasi">
-    <div class="container my-5">
+    <div class="container py-5">
       <div class="card shadow-lg border-0">
         <div class="card-body p-0">
           <h4 class="card-title text-center p-3 gradient-text bg-white">
