@@ -4,6 +4,43 @@ html, body {
   height: 100%;
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle, #ffcc00, #ff6600);
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+}
+
+.navbar li {
+  display: inline-block; /* biar horizontal */
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffe082; /* warna hover */
+}
+
 .hero {
   position: relative;
   height: 100vh;
@@ -79,7 +116,6 @@ html, body {
 .card-info {
   margin: 0;
   padding: 20px;
-  background: #fff;
   display: flex;
   align-items: center;
 }

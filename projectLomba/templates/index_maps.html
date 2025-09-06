@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Peta Kebudayaan Nusantara</title>
+  <link rel="icon" type="image/png" href="{% static 'img/indonesia_logo.png' %}">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="{% static 'css/style_maps.css' %}">
   <!-- Boostrap -->
@@ -41,6 +42,11 @@
       color: #007BFF;
       text-decoration: none;
     }
+
+    .pemisah {
+      background: radial-gradient(circle, #ffcc00, #ff6600);
+    }
+      
     .card-info {
       background-image: url("{% static 'img/latar_polos.jpg' %}");
     }
@@ -70,6 +76,16 @@
   </style>
 </head>
 <body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#eksplorasi">Eksplorasi</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
   <section class="hero">
     <img src="{% static 'img/background.png' %}">
     <div class="overlay">
@@ -81,7 +97,11 @@
     </div>
   </section>
 
-  <section class="card-info py-5">
+  <div class="pemisah">
+    <br>
+  </div>
+
+  <section class="card-info py-5" id="tentang">
     <h2 class="gradient-text py-3 mb-2 text-center">Seputar Informasi Yang Akan Dipelajari</h2>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -114,10 +134,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="list-prov">
-
   </section>
 
   <section id="eksplorasi">
