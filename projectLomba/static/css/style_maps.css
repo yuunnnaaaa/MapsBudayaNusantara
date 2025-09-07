@@ -113,34 +113,33 @@ html, body {
     background: #ffaa00;
 }
 
-.card-info {
+.about {
   margin: 0;
   padding: 20px;
-  display: flex;
   align-items: center;
 }
 
-.card-info .container {
+.about .container {
   max-width: 100%;
   padding-left: 0;
   padding-right: 0;
   height: 100%;         
 }
 
-.card-info .row {
+.about .row {
   margin-left: 0;
   margin-right: 0;
   height: 100%;
   align-items: center;
 }
 
-.card-info .card {
+.about .card {
   border: none;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-.card-info .card .card-body .card-title {
+.about .card .card-body .card-title {
   color: #d35400;
   font-weight: 600;
 }
